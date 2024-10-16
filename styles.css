@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #0e5b9d; /* Šviesesnė spalva */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.burger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line {
+    height: 4px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Sklandus efektas */
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+.content {
+    padding: 20px;
+    background-color: white; /* Baltas fonas turinio sekcijai */
+    border-radius: 5px; /* Kampų suapvalinimas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Šešėlis */
+    margin: 20px; /* Atstumas nuo naršymo juostos ir puslapio krašto */
+}
+
+.images {
+    display: flex; /* Naudoti Flexbox, kad paveiksliukai būtų šalia */
+    justify-content: center; /* Centruoti paveiksliukus */
+    gap: 10px; /* Tarpas tarp paveiksliukų */
+    margin: 20px 0; /* Atstumas nuo viršaus ir apačios */
+}
+
+.image {
+    width: 350px; /* Nustatyti paveiksliukų plotį */
+    height: auto; /* Automatinis aukštis, išlaikant proporcijas */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative; /* Pakeista į "relative" */
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Viršutinė šešėlis */
+}
+
+/* Papildomi stiliai, kad būtų geriau reaguojama į ekranus */
+@media (max-width: 600px) {
+    nav a {
+        float: none; /* Išdėstymas mobiliesiems */
+        text-align: left; /* Sulygiuojama kairėje */
+    }
+}
